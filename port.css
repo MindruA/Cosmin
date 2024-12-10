@@ -1,0 +1,327 @@
+body{
+
+    margin: 0;
+    overflow-x: hidden;
+    
+    background-color: rgb(43, 43, 43);
+}
+html{
+    overflow-x: hidden;
+}
+header{
+    z-index: 1000; /* Asigură că header-ul este deasupra altor elemente */
+    position: fixed; /* Fixează header-ul */
+    top: 0;
+    left: 0;
+    transition: top 0.3s ease; /* Tranziție lină pentru ascundere */
+    background-color: #22283100;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+#fh{
+    padding: 3vh;
+    filter: drop-shadow(-4px 0px 11px #ffffff);
+}
+.logoTel{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(4vw);
+      filter: drop-shadow(12px 11px 10px #000000);
+   
+      
+}
+.logoTel img{
+    max-width: 35vw;
+}
+/* Stil pentru butonul hamburger */
+/* Butonul hamburger cu două linii */
+.menu-icon {
+transform: translateX(18vw);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 10vw;
+height: 2vh;
+cursor: pointer;
+z-index: 1001;
+
+
+
+}
+
+
+.menu-icon div {
+  
+width: 100%;
+height: 1px;
+background-color: white;
+border-radius: 2px;
+transition: all 0.4s ease-in;
+
+}
+
+/* Animația pentru transformarea în "X" */
+.menu-icon.open div:nth-child(1) {
+transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open div:nth-child(2) {
+transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.side-menu {
+    
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: #000000;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0; /* Invizibil la început */
+visibility: hidden; /* Ascuns complet */
+transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Tranziția de opacitate */
+z-index: 1000;
+}
+
+.side-menu.open {
+opacity: 1; /* Devine vizibil */
+visibility: visible; /* Vizibil */
+transition: opacity 0.5s ease, visibility 0s linear 0s; /* Asigură sincronizarea */
+}
+
+.side-menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.side-menu ul li {
+margin: 15px 0;
+opacity: 0; /* Text invizibil la început */
+transform: translateY(20px); /* Porneste mai jos */
+transition: opacity 0.5s ease, transform 0.5s ease; /* Tranziție fluidă */
+
+}
+
+.side-menu ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+transition: color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+color: #f4a261;
+}
+.side-menu.open ul li {
+opacity: 1; /* Devine vizibil */
+transform: translateY(0); /* Revine la poziția inițială */
+}
+/* Adăugare întârziere pentru fiecare element */
+.side-menu ul li:nth-child(1) {
+transition-delay: 0.1s;
+}
+
+.side-menu ul li:nth-child(2) {
+transition-delay: 0.2s;
+}
+
+.side-menu ul li:nth-child(3) {
+transition-delay: 0.3s;
+}
+
+.side-menu ul li:nth-child(4) {
+transition-delay: 0.4s;
+}
+
+.side-menu ul li:nth-child(5) {
+transition-delay: 0.5s;
+}
+.menu-close {
+font-size: 24px;
+color: white;
+cursor: pointer;
+text-align: right;
+}
+
+.categ{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+#di1{
+    display: flex;
+    justify-content: center;
+   width: 100%;
+  height: auto;
+
+}
+#di1 img{
+    max-width: 70vw;
+    filter: drop-shadow(12px 11px 10px #000000);
+}
+#di2{
+    display: flex;
+    justify-content: center;
+   width: 100%;
+  height: auto;
+
+}
+#di2 img{
+    max-width: 70vw;
+    filter: drop-shadow(12px 11px 10px #000000);
+}
+#di3{
+    display: flex;
+    justify-content: center;
+   width: 100%;
+  height: auto;
+
+}
+#di3 img{
+    filter: drop-shadow(12px 11px 10px #000000);
+    max-width: 70vw;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    height: auto;
+    background-image: url(Fotter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    filter: drop-shadow(10px -4px 16px #000000);
+}
+
+.footer-content {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    filter: drop-shadow(1px -1px 8px #000000);
+}
+#insta img{
+    max-width: 22vw;
+    
+}
+#logofot{
+    transform: translateY(5vh);
+    position: relative;
+    max-width: 30vw;
+}
+.footer-logo img {
+    max-width: 20vw;
+   
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f5db76; /* Accent color */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social a img {
+   max-width: 20vw;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    color: black;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+@media (min-width:750px){
+    .logoTel img{
+        max-width: 15vw;
+    }
+    .menu-icon div {
+        width: 50%;
+    }
+    header{
+      
+        height: auto;
+    }
+    .footer-social img{
+        max-width: 5vw !important;
+    }
+    .footer-logo img {
+        max-width: 10vw;
+       
+    }
+    #logofot{
+        transform: translateY(5vw);
+        max-width: 20vw;
+    }
+    .footer{
+        background-position: center top -5vw; /* Mută fundalul mai jos cu 20px */
+    }
+    .footer-bottom{
+        font-size: 1rem;
+    }
+    #di3 img{
+        max-width: 30vw;
+    }
+    #di2 img{
+        max-width: 30vw;
+    }
+    #di1 img{
+        max-width: 30vw;
+    }
+    }
+

@@ -1,0 +1,1443 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    margin: 0;
+    z-index: 0;
+    background: rgb(237,237,235);
+    background: radial-gradient(circle, rgba(237,237,235,1) 0%, rgba(182,182,178,1) 32%, rgba(52,52,52,1) 100%);
+    background-image: url(back3.png);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(237,237,235);
+    background: radial-gradient(circle, rgba(237,237,235,1) 0%, rgba(182,182,178,1) 32%, rgba(52,52,52,1) 100%);
+    opacity: 0.8; /* Setează opacitatea fundalului */
+    z-index: -1; /* Plasează fundalul în spatele conținutului */
+}
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.logo{
+    
+    transform: translateX(-7vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+   max-width: 22vw;
+   max-height: 50vh;
+   filter: drop-shadow(10px 10px 7px #000000);
+  
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Folosește culoarea moștenită */
+    transition: color 0.3s ease-in-out; /* Tranziție lină pentru culoare */
+}
+a:hover {
+    color: gold; /* Previne schimbarea culorii la hover */
+   
+   cursor: pointer;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5vw;
+    font-family: "Prata", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+}
+.menu p{
+    letter-spacing: 0.15vw; /* Alege valoarea dorită */
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.46);
+}
+.partea1{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l1{
+    width: 5%;
+    height: 100%;
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+z-index: 3;
+}
+.f1 { grid-area: 1 / 1 / 2 / 2; }
+.f2{ grid-area: 2 / 1 / 3 / 2; }
+#f1{
+    transform: translateX(-2.5vw);
+    max-width: 15vw;
+    max-height: 21vh;
+    filter: drop-shadow(8px 22px 15px #000000);
+}
+#f2{
+    transform: rotate(25deg) translateX(-10vh);
+    filter: drop-shadow(15px 13px 9px #000000);
+    max-width: 20vw;
+    max-height: 20vh;
+}
+.mij{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+  
+}
+.l2{
+    width: 5%;
+    height: 100%;
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+
+}
+.e1 { grid-area: 1 / 1 / 2 / 2; }
+.e2 { grid-area: 2 / 1 / 3 / 2; }
+.e1 img{
+    filter: drop-shadow(16px 14px 6px #000000);
+    transform: translateX(-2.5vw);
+    max-width: 10vw;
+}
+.e2 img{
+    transform: translateX(-3vw);
+    filter: drop-shadow(8px 22px 15px #000000);
+    max-width: 20vh;
+}
+/* partea 1*/
+.p1{
+   
+    width: 60%;
+    height: 50%;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.dj{ grid-area: 3 / 2 / 4 / 3; }
+.div1{ display: flex; justify-content: center;}
+.div2{ display: flex; justify-content: center; align-items: center;}
+.div3{  display: flex; justify-content: center; align-items: center;}
+.div4{  display: flex; justify-content:center;}
+
+.dj{
+    display: flex; justify-content: center;
+}
+.porumbel-container img{
+    max-width: 12vw;
+    max-height: 30vh;
+}
+#porumbel1 {
+    position: absolute;
+    filter: drop-shadow(45px 100px 25px #000000);
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Tranziție de 0.5s pentru opacitate */
+}
+
+#porumbel2 {
+    opacity: 0;
+    filter: drop-shadow(88px 100px 25px #000000);
+    transition: opacity 0.5s ease; /* Tranziție de 0.5s pentru opacitate */
+}
+
+.porumbel-container:hover #porumbel1 {
+    opacity: 0;
+}
+
+.porumbel-container:hover #porumbel2 {
+    opacity: 1;
+}
+.schimb-pantofi{
+display: inline-block;
+position: relative; /* Necesită poziționare relativă */
+width: 80%;
+height: 90%;
+border-radius: 30px;
+
+
+
+}
+#pantofi{
+    position: absolute;
+    filter: drop-shadow(13px 10px 7px #222222);
+    transition: opacity 1s ease;
+    max-width: 12vw;
+    max-height: 30vh;
+}
+#pantofib{
+    max-width: 12vw;
+    max-height: 30vh;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* Elimină animațiile bruște */
+    filter: drop-shadow(13px 10px 7px #222222);
+}
+.schimb-pantofi:hover #pantofib {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear; /* Apare rapid */
+}
+
+.schimb-pantofi:hover #pantofi {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* Dispare rapid */
+}
+.pergament-container{
+    display: grid;
+    grid-template-columns: 1fr; /* O coloană */
+    grid-template-rows: 1fr;   /* Un rând */
+   width: 100%;
+   height: 100%;
+}
+.pergament-expanded,.pergament{
+    grid-column: 1; /* Ambele div-uri sunt în aceeași coloană */
+    grid-row: 1;    /* Ambele div-uri sunt în același rând */
+}
+#pergament1{
+    position: relative;
+    z-index: 1000;
+  
+}
+#pergament2{
+    z-index:0 ;
+ transition: transform 1s ease-in-out;
+}
+.pergament-container img{
+    max-width: 15vw;
+    max-height: 25vh;
+    
+}
+.pergament-container:hover #pergament2 {
+    transform: translateY(45%);
+}
+.verghete-schimb{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.verghete-schimb img{
+    max-width: 15vw;
+    max-height: 25vh;
+}
+#vergheta1{
+    position: absolute;
+    transition: opacity 0.7s ease;
+    filter: drop-shadow(13px 15px 10px #000000) !important;
+}
+#vergheta2{
+    filter: drop-shadow(16px 35px 39px #000000);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+mask-composite: intersect; 
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* Elimină animațiile bruște */
+
+}
+
+.verghete-schimb:hover #vergheta2{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear; /* Apare rapid */
+}
+.verghete-schimb:hover #vergheta1{
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* Dispare rapid */
+}
+.camera-flash{
+    cursor: pointer; /* Transformă cursorul într-un pointer */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-flash img{
+    max-width: 13vw;
+    max-height: 30vh;
+}
+#camera{
+    filter: drop-shadow(16px 19px 7px #222222);
+position: absolute;
+z-index: 0;
+}
+#flash{
+    z-index: 10000;
+    position: relative;
+    opacity: 0;
+}
+.camera-flash:hover #flash {
+    opacity: 1;
+    transition: opacity 0.1s ease-in;
+}
+#fullscreen-flash {
+    position: fixed;
+    pointer-events: none; /* Evită interacțiuni */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    pointer-events: none; /* Evită interacțiuni cu acest element */
+    transition: opacity 0.1s ease-in-out;
+    z-index: 9999;
+}
+/* partea 1*/
+
+
+/* partea 2*/
+.p2{
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 2vh;
+
+}
+.div5 { grid-area: 1 / 1 / 3 / 7; }
+.div6 { grid-area: 3 / 1 / 4 / 3; }
+.div7 { grid-area: 3 / 3 / 4 / 5; }
+.div8 { grid-area: 3 / 5 / 4 / 7; }
+.dj2  { grid-area: 4 / 3 / 6 / 4; }
+.porumbel-container2 img{
+    max-width: 10vw;
+    
+}
+.porumbel2{
+   
+    position: relative;
+    width: 10vw;
+    height: 20vh;
+    filter: drop-shadow(45px 100px 25px #000000);
+    transition: opacity 1s ease;
+}
+.porumbel1{
+  position: absolute;
+   opacity: 0;
+   filter: drop-shadow(45px 100px 25px #000000);
+   transition: opacity 1s ease;
+}
+.porumbel-container2:hover .porumbel1 {
+    opacity: 1;
+}
+
+.porumbel-container2:hover .porumbel2 {
+    opacity: 0;
+}
+@keyframes alternateImages2 {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; } /* Scade opacitatea fără să dispară complet */
+}
+
+
+
+.div5{
+    cursor: pointer;
+   transform: translateY(-3vh);
+    background-image: url(cosmin.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 11px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 11px 13px 0px rgba(0,0,0,0.75);
+box-shadow: 9px 11px 13px 0px rgba(0,0,0,0.75);
+transition: transform 1s ease;
+}
+
+
+.p2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.po1 {
+    cursor: pointer;
+    border-radius: 18px;
+    max-width: 15vw;
+    max-height: 9vw;
+    filter: drop-shadow(9px 9px 8px #000000);
+    transition: transform 0.5s ease; /* Setează o tranziție pentru un efect mai fluid */
+}
+.po1:hover{
+    transform: scale(1.2); /* Mărește imaginea cu 20% */
+    z-index: 10; /* Pune imaginea deasupra altor elemente */
+    cursor: pointer;
+}
+#po1:hover{
+    transform: scale(1.1); /* Mărește imaginea cu 20% */
+    z-index: 10000; /* Pune imaginea deasupra altor elemente */
+    
+}
+#po12{
+    margin-left: 1vw;
+}
+.acoperire{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91, 91, 91, 0.595);
+    transition: opacity 1s ease;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.acoperire h1{
+    text-shadow: 3px 3px 4px rgb(255, 255, 255);
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.acoperire:hover{
+    z-index: 10000;
+   opacity: 0.9;
+}
+
+
+        /* partea 2*/
+        /* partea 3*/
+.p3{
+    width: 35%;
+    height: 61%;
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+.div9 { grid-area: 1 / 1 / 2 / 2; }
+.div10 { grid-area: 2 / 1 / 3 / 2; }
+.div11{ grid-area: 3 / 1 / 4 / 2; }
+.div12{ grid-area: 4 / 1 / 5 / 2; }
+.p3 img{
+    max-width: 10vw;
+    max-height: 20vh;
+}
+.po2 {
+    border-radius: 15px;
+    max-width: 15vw;
+    max-height: 20vh;
+    filter: drop-shadow(9px 9px 8px #000000);
+    transition: transform 0.5s ease; /* Setează o tranziție pentru un efect mai fluid */
+}
+.po2:hover{
+    transform: scale(1.1); /* Mărește imaginea cu 20% */
+    z-index: 10; /* Pune imaginea deasupra altor elemente */
+    cursor: pointer;
+}
+
+@media (min-width:600px){
+    .mobile-version {
+        display:none;
+    }
+    .mobile-version {
+        opacity: 0; /* Ascunde complet versiunea mobilă */
+        pointer-events: none; /* Dezactivează interacțiunile cu elementele */
+    }
+
+    .mobile-version * {
+        opacity: 0; /* Setează opacitatea la 0 pentru toate elementele din versiunea mobilă */
+        pointer-events: none; /* Dezactivează complet interacțiunile */
+    }
+       .mobile-version {
+        display: none !important; /* Ascunde complet versiunea mobilă */
+    }
+
+    .mobile-version * {
+        display: none !important; /* Ascunde toate elementele copil */
+    }
+    .desktop-version{
+        display: block;
+        overflow: hidden;
+       
+    }
+   
+    
+    html, body {
+        overflow: hidden;
+        height: 100%; /* Asigură că înălțimea este egală cu viewport-ul */
+        margin: 0;
+        padding: 0;
+    }
+   
+    /* Fix pentru elementele care depășesc pagina */
+    * {
+        box-sizing: border-box; /* Include padding-ul și marginile în dimensiunea totală */
+        max-height: 100vh; /* Limitează înălțimea elementelor */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  
+
+    .desktop-version {
+        display: none;
+    }
+
+    .mobile-version {
+        display: block;
+    }
+  
+
+}
+@media (max-width:600px) {
+    
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        margin: 0;
+        z-index: 0;
+        background: none !important; /* Elimină toate fundalurile */
+        background-color: #ffffff !important; /* Asigură transparența */
+    }
+    body::before {
+        content: none !important; /* Elimină pseudo-elementul */
+    }
+    header.hidden {
+        top: -100px; /* Ajustează înălțimea pentru a acoperi complet header-ul */
+    }
+    header{
+        z-index: 1000; /* Asigură că header-ul este deasupra altor elemente */
+        position: fixed; /* Fixează header-ul */
+        top: 0;
+        left: 0;
+        transition: top 0.3s ease; /* Tranziție lină pentru ascundere */
+        background-color: #222831;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       
+    }
+    .logoTel{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(4vw);
+       
+          
+    }
+    .logoTel img{
+        max-width: 35vw;
+    }
+    /* Stil pentru butonul hamburger */
+/* Butonul hamburger cu două linii */
+.menu-icon {
+    transform: translateX(18vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10vw;
+    height: 2vh;
+    cursor: pointer;
+    z-index: 1001;
+  
+
+  
+}
+
+
+.menu-icon div {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.4s ease-in;
+   
+}
+
+/* Animația pentru transformarea în "X" */
+.menu-icon.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    
+}
+
+.menu-icon.open div:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+ 
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #444d59;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invizibil la început */
+    visibility: hidden; /* Ascuns complet */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Tranziția de opacitate */
+    z-index: 1000;
+}
+
+.side-menu.open {
+    opacity: 1; /* Devine vizibil */
+    visibility: visible; /* Vizibil */
+    transition: opacity 0.5s ease, visibility 0s linear 0s; /* Asigură sincronizarea */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+    opacity: 0; /* Text invizibil la început */
+    transform: translateY(20px); /* Porneste mai jos */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Tranziție fluidă */
+
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    color: #f4a261;
+}
+.side-menu.open ul li {
+    opacity: 1; /* Devine vizibil */
+    transform: translateY(0); /* Revine la poziția inițială */
+}
+/* Adăugare întârziere pentru fiecare element */
+.side-menu ul li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.side-menu ul li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.side-menu ul li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.side-menu ul li:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.side-menu ul li:nth-child(5) {
+    transition-delay: 0.5s;
+}
+.menu-close {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+.no-scroll {
+    overflow: hidden; /* Dezactivează scroll-ul pe verticală și orizontală */
+    height: 100vh; /* Asigură că pagina nu depășește ecranul */
+}
+.mp1 {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(p21.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Asigură că pseudo-elementul nu depășește containerul */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)); /* Ajustează punctul de tranziție */
+    mask-composite: intersect;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    -webkit-mask-composite: source-in;
+}
+
+.mp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(p21.jpeg); /* Adaugă explicit fundalul */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5px); /* Ajustează nivelul de blur */
+    z-index: 1; /* Plasează fundalul în spate */
+}
+.overlay {
+    position: relative; /* Asigură-te că textul este deasupra fundalului */
+    z-index: 1; 
+ 
+}
+.overlay h1{
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(255, 255, 255);
+    font-size:10vw;
+   
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.overlay p{
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(255, 255, 255);
+    
+   
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.back3{
+    margin-top: 20vw;
+    overflow: hidden;
+    width: 100%;
+    height:100vh;
+background-image: url(back23.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: drop-shadow(15px -3px 9px #292929);
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 2vh;
+align-items: center;
+color: white;
+z-index: 0;
+
+
+}
+.back3 h1{
+    
+opacity: 0; /* Ascuns inițial */
+
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(255, 255, 255);
+    font-size:6vw;
+   text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.back3 h1.active {
+    
+    animation: slide-in-blurred-top 1.5s ease; /* Activează animația */
+opacity: 1; /* Ascuns inițial */
+position: relative;
+  
+}
+.slick-dots li button::before {
+    color: white; /* Setează punctele neactive ca fiind albe */
+    opacity: 0.5; /* Ajustează opacitatea punctelor neactive */
+    font-size: 12px; /* Ajustează dimensiunea punctelor */
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1; /* Setează punctele active ca fiind complet opace */
+    color: white; /* Setează punctele active ca fiind albe */
+}
+
+
+.single-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+opacity: 0; /* Ascuns inițial */
+
+    width: 80%;
+    height: 40vh;
+}
+.single-item.active {
+    opacity: 1;
+    animation: slide-in-fwd-center 5s ease; /* Activează animația */
+    position: relative;
+}
+.rec img{
+    z-index: 100000;
+    max-width: 100%;
+
+}
+#back4{
+    margin-top: 20vw;
+    position: relative;
+width: 100%;
+height: 130vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+overflow: hidden;
+
+}
+#back4 h1{
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(0, 0, 0);
+    font-size:1.5rem;
+    font-weight: 100;
+        letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    
+   
+}
+#rama1{
+    width: 60vw;
+    height: 30vh;
+
+}
+#rama2{
+    width: 40vw;
+    height: 15vh;
+   
+    
+}
+.rame{
+   
+        display: flex;
+        flex-direction: column;
+        margin: 2vw;
+}
+.rame img{
+    max-width: 50vw;
+    max-height: 30vh;
+    margin: auto; /* Centrare */
+    display: block;
+    
+}
+
+ #poza4 {
+    transform: none; /* Elimină rotația excesivă */
+    position: relative; /* Corectare suprapuneri */
+    z-index: 1;
+}
+#rama1 img{
+    filter: drop-shadow(16px -6px 10px #000000);
+    
+}
+
+#poza2{
+    transform: translate(40vw,-5vh);
+    filter: drop-shadow(16px 1px 22px #000000);
+}
+#poza4{
+    position: absolute;
+    transform: translatex(40vw) rotate(5deg);
+    filter: drop-shadow(16px 1px 22px #000000);
+    z-index: 0;
+}
+
+.fluture{
+    width: 30vw;
+    height: 20vh;
+   background-image: url(fluture2.png);
+   background-position: center;
+   background-size: cover;
+   filter: drop-shadow(3px 6px 5px #000000); /* Reducere umbră */
+}
+.floarem
+{
+    width: 30vw;
+    height: 20vh;
+    background-image: url(floaremac12.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0; /* Poziționează floarea în partea dreaptă */
+    top: 30vw; /* Ajustați dacă vreți să fie la o anumită înălțime */
+    /* Eliminați float: left */
+    transform: translateX(7vw) rotate(-40deg);
+    filter: drop-shadow(12px 16px 24px #000000);
+}
+.cosminmobile{
+    width: 100%;
+    height: auto;
+    position: relative; /* Poziționare necesară */
+    overflow: hidden;
+}
+.cosminmobile img{
+    max-width: 120vw;
+}
+
+.cosminmobile p{
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(0, 0, 0);
+    font-size:1rem;
+    font-weight: 100;
+    text-align: center;
+        letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+#cos1 {
+    
+    width: 100%;
+    height: 40vh;
+    padding-top: 5vh;
+    position: absolute; /* Poziționare necesară pentru z-index */
+    z-index: 1; /* Elementul mai jos pe axa Z */
+    
+}
+
+#cos2 {
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 40vh;
+    padding-top: 5vh;
+    position: relative; /* Poziționare necesară pentru z-index */
+    z-index: 100000; /* Elementul mai sus pe axa Z */
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: none; /* Fără animație inițial */
+   
+}
+#scrise{
+    filter: drop-shadow(14px 13px 11px #000000);
+   width: 100%;
+   padding-bottom: 7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    
+}
+#scris1{
+   
+    background-color: #222831;
+    width: 90%;
+    opacity: 0; /* Ascuns inițial */
+   
+}
+#scris1 p{
+    color: white;
+}
+#scris2{
+    
+    opacity: 0; /* Ascuns inițial */
+    background-color: #f5db76;
+    width: 90%;
+    position: relative;
+    margin-left: 10%;
+}
+#scris2 p{
+    color: #222831;
+}
+#scris3{
+    position: relative;
+    opacity: 0; /* Ascuns inițial */
+    width: 90%;
+    text-align: center;
+    background-color: #222831;
+}
+#scris3 p{
+    padding: 2vw;
+    color: white;
+}
+#scris1.animate{
+    animation: slide-in-left 1.5s ease-out forwards; /* Activează animația */
+    opacity: 1; /* Ascuns inițial */
+    position: relative;
+}
+#scris2.animate{
+    animation: slide-in-right 1.5s ease-out forwards; /* Activează animația */
+    opacity: 1; /* Ascuns inițial */
+    position: relative;
+  }
+
+#scris3.animate{
+   
+    animation:  slide-in-left 1.5s ease-out forwards; /* Activează animația */
+    opacity: 1; /* Ascuns inițial */
+    position: relative;
+}
+
+
+
+
+
+
+/* Animația se declanșează doar când clasa active este adăugată */
+#cos2.active {
+    animation: rupturaFoaie 2s ease-in-out, cadereCos2 1s ease-in-out 2s forwards;
+    filter: drop-shadow(12px 16px 24px #000000);
+}
+
+.servicii{
+    width: 100vw;
+margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+   
+   
+    text-align: center;
+        letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10vh;
+    width: 35vw;
+    height: 7vh;
+    background: linear-gradient(to top, #222831, #3a4454, #667690);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+  .btn{
+    animation: shake-bottom 1.5s ease-out 1s infinite; /* Activează animația */
+    opacity: 1; /* Ascuns inițial */
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: inherit; /* Folosește culoarea moștenită */
+}
+a:hover {
+    color: inherit; /* Previne schimbarea culorii la hover */
+}
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
+
+  /* Footer */
+.footer {
+    background: linear-gradient(to top, #222831, #3a4454);
+    color: #f5f5f5;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    filter: drop-shadow(1px -1px 8px #ffffff);
+}
+#insta img{
+    max-width: 22vw;
+    
+}
+#logofot{
+    position: relative;
+    max-width: 30vw;
+}
+.footer-logo img {
+    max-width: 20vw;
+   
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f5db76; /* Accent color */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social a img {
+   max-width: 20vw;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+@-webkit-keyframes tilt-in-fwd-tr {
+    0% {
+      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-fwd-tr {
+    0% {
+      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes shake-bottom {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  @-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shake-bottom {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  
+/* Animația pentru efectul de ruptură */
+@keyframes rupturaFoaie {
+    0% {
+        transform: scaleY(1); /* Inițial fără efect */
+    }
+    50% {
+        transform: scaleY(0.5) rotate(-3deg); /* Ruperea începe */
+    }
+    100% {
+        transform: scaleY(0.2) rotate(-10deg); /* Ruperea e aproape completă */
+    }
+}
+
+/* Animația pentru cădere */
+@keyframes cadereCos2 {
+    0% {
+        transform: translateY(0); /* Începe de la poziția curentă */
+    }
+    100% {
+        transform: translateY(100vh) rotate(30deg); /* Cade din ecran și se rotește */
+        opacity: 0; /* Devine invizibil */
+    }
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+}
+
